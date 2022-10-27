@@ -14,6 +14,7 @@ T1-2.fastq: read 2 (reverse read) containing the sgRNA sequence.
 
 Output data:
 statistics.txt:
+
 Number of coupling_matches: Number of reads whose sgRNA and target sequences are paired.
 Number of decoupling_matches: Number of reads whose sgRNA and target sequences are not paired. These reads were excluded from analysis.
 Number of indel: Number of reads with indel mutation detected in read1.
