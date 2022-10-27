@@ -8,25 +8,34 @@ The NGS data should be provided as paired end sequencing data with read 1 (forwa
 The script first identifies the sgRNA from the reverse read, then aligns the target sequence with the sgRNA sequence. If there is a mismatch, it was counted as an indel.
 
 
-Input data format:
+**Input data format:**
 
 T1-1.fastq: read 1 (forward read) containing the sgRNA target sequence.
 
 T1-2.fastq: read 2 (reverse read) containing the sgRNA sequence.
 
-Output data:
-statistics.txt:
+**Output data:**
+**statistics.txt:**
 
 Number of coupling_matches: Number of reads whose sgRNA and target sequences are paired.
+
 Number of decoupling_matches: Number of reads whose sgRNA and target sequences are not paired. These reads were excluded from analysis.
+
 Number of indel: Number of reads with indel mutation detected in read1.
+
 Number of no_indel: Number of reads with no detected indel mutation.
+
 Number of non perfect matches: Number of reads with sgRNA sequence not matching with any of the sgRNAs in the library.
+
 Coupling ratios: The fraction of reads with sgRNA and target sequences paired: coupling_matches/(coupling_matches+decoupling_matches)
 
-library_count.txt:
+**library_count.txt:**
+
 sequence: the sgRNA sequence
+
 target count: The number of reads with the corresponding sgRNA sequence.
+
 indel: The number of reads with corresponding sgRNA sequence and detected indel in target sequence.
+
 no indel: The number of reads with corresponding sgRNA sequence and and no detected indel.
 
