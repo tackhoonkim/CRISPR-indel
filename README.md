@@ -3,7 +3,7 @@ This is a C++ script used for aligning NGS reads against sgRNA library and detec
 
 The NGS data should be provided as paired end sequencing data with read 1 (forward read) containing reverse complement of the sgRNA target sequence (with potential indel mutations by the sgRNA paired with it), and read 2 (reverse read) containing the sgRNA. 
 
-![NGS scheme](https://user-images.githubusercontent.com/62285278/198166170-58c29a94-639f-47ee-b89e-37e976770da9.png)
+![NGS scheme](https://user-images.githubusercontent.com/62285278/198174173-349f710d-3dcd-43a0-ac27-7bb96d3231f2.png)
 
 The script first identifies the sgRNA from the reverse read, then aligns the target sequence with the sgRNA sequence. If there is a mismatch, it was counted as an indel.
 
