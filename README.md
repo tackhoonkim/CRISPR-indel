@@ -14,6 +14,8 @@ T1-1.fastq: read 1 (forward read) containing the sgRNA target sequence.
 
 T1-2.fastq: read 2 (reverse read) containing the sgRNA sequence.
 
+
+
 **Output data:**
 **statistics.txt:**
 
