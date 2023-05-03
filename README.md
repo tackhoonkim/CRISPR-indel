@@ -1,6 +1,10 @@
 # CRISPR-indel
 This is a C++ script used for aligning NGS reads against sgRNA library and detecting indel mutations.
 
+The use of this script was published in:
+
+Park et. al., Efficient prioritization of CRISPR screen hits by accounting for targeting efficiency of guide RNA, BMC Biol, 2023.
+
 The NGS data should be provided as paired end sequencing data with read 1 (forward read) containing reverse complement of the sgRNA target sequence (with potential indel mutations by the sgRNA paired with it), and read 2 (reverse read) containing the sgRNA. 
 
 ![NGS scheme](https://user-images.githubusercontent.com/62285278/198174173-349f710d-3dcd-43a0-ac27-7bb96d3231f2.png)
